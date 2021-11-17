@@ -8,8 +8,6 @@ public class Main {
 
     public static void sortPeople(List<Human> list) {
 
-        boolean sorted = false;
-
 
         for (int i = 0; i < list.size(); i++) {
             for (int j = i; j < list.size(); j++) {
@@ -24,29 +22,8 @@ public class Main {
 
         }
 
-//        while (!sorted) {
-//            sorted = true;
-//        }
-//
-//        for (int i = 0; i < list.size() - 1; i++) {
-//            if (list.get(i).getWeight() > list.get(i + 1).getWeight()) {
-//                temp = list.get(i); //кладу больший элемент в temp//
-//                list.set(list.get(i), i+1);
-//                list.set(i,list.get(i+1));
-//
-//                sorted=false;
-//
-//            }
-//
-//        }
-
 
     }
-
-
-    //temp = list.get(i);
-    //list.set(list.get(j),i);
-    //list.set(temp,j);
 
 
     public static void main(String[] args) {
@@ -91,7 +68,7 @@ public class Main {
 
         sortPeople(people);
 
-        for (Human human: people) {
+        for (Human human : people) {
             System.out.println(human.getName());
         }
 
